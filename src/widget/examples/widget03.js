@@ -8,7 +8,7 @@ export default function(key, draw) {
     for (let idx in rects) {
         let rect = rects[idx]
         let c = nextColor()
-        let shape = key.next256() % 4
+        let shape = key.next256() % 10
         if (shape == 0) {
             draw.rect().size(rect.width, rect.height).move(rect.x, rect.y).fill(c)
         }
@@ -29,13 +29,7 @@ export default function(key, draw) {
             draw.polyline([x1, y1, x2, y2, x3, y3, x4, y4, x5, y5, x6, y6]).fill(c)
         }
         if (shape == 2) {
-            let x1 = rect.x
-            let y1 = rect.y
-            let x2 = rect.x + rect.width
-            let y2 = rect.y
-            let x3 = rect.x + rect.width/2
-            let y3 = rect.y + rect.height
-            draw.polyline([x1, y1, x2, y2, x3, y3]).fill(c)
+            draw.circle(rect.width).move(rect.x, rect.y).fill(c).opacity(0.55)
         }
         if (shape == 3) {
             let x1 = rect.x

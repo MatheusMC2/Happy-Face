@@ -6,7 +6,7 @@ export default function (key, draw) {
     let nextColor = getColorIterator(key)
 
     let b = blob(key.next256())
-    console.log(b);
+    //console.log(b);
     b.fill(nextColor()).opacity(0.3)
     b.move(-250,-250).size(1000)
     b.addTo(draw)
