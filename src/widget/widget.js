@@ -11,7 +11,6 @@ function widget(key, draw) {
 
     // Descomente linha abaixo para ver exemplo 0
 
-    for()
     let elem = shape(key.next())
     elem.size(300,300).move(100,100).fill("green").opacity(0.5)
     elem.addTo(draw)
