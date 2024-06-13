@@ -3,29 +3,38 @@
 > Versão alpha beta gama ....
 >
 
-## Como rodar?
+<img src="./public/logo.png"/>
 
-Clone ou faça o download deste repositório. Acesse a pasta, instale as dependências e execute-o com `npm run dev`  
-
-```bash
-git clone https://github.com/mmamorim/svguid.git
-cd svguid
-npm install
-npm run dev
-```
-
-Abra o navegador e acesse a url: `http://localhost:5173/`
-
-<img src="./assets/tela01.png" style="margin-bottom: 10px;"/>
-
-Cada identificador digitado irá gerar uma chave hash que poderá ser visualizada a partir do botão ao lado.
-
-<img src="./assets/tela02.png" style=""/>
-<img src="./assets/tela03.png" style="margin-bottom: 10px;"/>
+Grupo:
+Aline Cerqueira de Andrade | 822161400
+Antonio Edilson da Silva | 820266168
+Caio Dantas Pinheiro | 822161401
+Jacqueline Vigilat Silva | 819226277
+Matheus Monte Cerqueiro |822133805
+Pablo Munhoz Calixto | 822132763
 
 
 
-## Como criar um algoritmo para gerar avatar?
+Versão final
+
+# Sobre
+
+O objetivo desse projeto, era a geração de uma imagem, com simbolos
+que acada chave aleatória, a imagem mudasse "caracteres do teclado"
+
+# Pré-requisitos
+
+ferramentas necessárias para executar o projeto. 
+
+1º Node.JS
+2º npm
+3º Sever Live
+
+# Licenças
+
+Todas fornecidas de maneira online web, de forma gratuita.
+
+## Como criar um algoritmo para gerar a imagem?
 
 🧑‍💻 Na pasta `src/widget/` você irá encontrar um arquivo `widget.js`. Este arquivo exporta uma função que será executada toda vez que o identificador é atualizado. Esta função receberá dois parâmetros `(key, draw)` que representa respectiamente: 
 
